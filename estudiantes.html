@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de estudiantes</title>
+    <link rel="stylesheet" href="css/estudiantes.css" />
+</head>
+<body class="gest-estds">
+
+    <!-- Barra superior fija o estática -->
+    <div class="topbar">
+        <img src="Elementos Visuales/logo CurioTok.png" alt="Logo" class="topbar-icon">
+    </div>
+
+    <!-- Contenedor centrado -->
+    <div class="panel-container">
+        <main>
+            <h2>Estudiantes registrados</h2>
+            <section class="cards-grid">
+            </section>
+        </main>
+        <section>
+            <button class="action-btn" id="agreg-btn">Agregar</button>
+            <button class="action-btn" id="elim-btn">Eliminar</button>
+        </section>
+    </div>
+    <div id="overlay" class="overlay hidden">
+        <div class="modal-card">
+            <h2>Agregar estudiante</h2>
+
+            <input
+                type="text"
+                id="student-name"
+                placeholder="Nombre completo"
+            >
+
+            <div class="modal-actions">
+                <button id="save-student" class="action-btn">Guardar</button>
+                <button id="cancel-student" class="action-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+<script src="scripts/estudiantes.js"></script>
+</body>
+</html>

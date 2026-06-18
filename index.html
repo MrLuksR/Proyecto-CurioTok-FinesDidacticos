@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CurioTok</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+    <div class="topbar"></div>
+    <div class="topbar-text">CurioTok | Siguiendo</div>
+
+    <div class="video-feed" id="videoFeed"></div>
+
+    <div class="comments-panel" id="commentsPanel">
+
+      <div class="comments-header">
+          Comentarios
+          <div class="close-btn" id="closeComments">✖</div>
+      </div>
+
+      <div class="comments-content">
+          <div id="commentsList"></div>
+      </div>
+
+      <div class="comment-form">
+          <input type="text" id="fullName" placeholder="Nombre y apellido">
+            <textarea id="commentText" rows="3" placeholder="Escribe un comentario..."></textarea>
+          <button id="sendComment">Enviar comentario</button>
+      </div>
+
+    </div>
+    <div class="left-sidebar">
+        <img src="Elementos Visuales/logo CurioTok.png" alt="CurioTok Logo" class="logo">
+        <form class="search-form">
+              <input type="text" placeholder="Buscar...">
+              <button type="submit">🔍</button>
+        </form>
+        <img src="Elementos Visuales/barraHerramientas.png" alt="Home" class="sidebar-icon">
+        <!--<button class="gest-btn" onclick="gestEst()">Gestionar estudiantes</button> -->
+        <!-- <button class="gest-btn">Gestionar videos</button> -->
+        
+        <text class="sidebar-text"> Creado por Lucas Rangel | Tercer Año de Informática</text>
+    </div>
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>
